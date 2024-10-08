@@ -1640,6 +1640,7 @@ GameObject:
   - component: {fileID: 1685918578}
   - component: {fileID: 1685918577}
   - component: {fileID: 1685918579}
+  - component: {fileID: 1685918580}
   m_Layer: 0
   m_Name: Character mover
   m_TagString: Untagged
@@ -1676,6 +1677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  jumpForce: 90
+  gravity: -9.81
 --- !u!143 &1685918578
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1723,6 +1726,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1685918580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685918575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906ce4aa55114430b919cacd44bf368e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2063283622
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class CharacterAnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        HandleAnimations();
     }
 
     private void HandleAnimations(){
@@ -31,6 +31,14 @@ public class CharacterAnimationController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.W)){
             animator.SetTrigger("WallJump");
+        }
+
+        if(Input.GetKeyDown(KeyCode.F)){
+            animator.SetTrigger("Fall");
+        }
+
+        if(Input.GetKeyDown(KeyCode.H)){
+            animator.SetTrigger("Hit");
         }
     }
 }
