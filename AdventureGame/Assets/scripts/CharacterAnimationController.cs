@@ -41,4 +41,9 @@ public class CharacterAnimationController : MonoBehaviour
             animator.SetTrigger("Hit");
         }
     }
+
+    public void TriggerHitAnimation()
+    {
+        animator.SetTrigger("Hit");
+    }
 }
