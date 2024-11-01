@@ -12,6 +12,9 @@ public class SimpleCharacterController : MonoBehaviour
     private Transform thisTransform;
     private Vector2 movementVector = Vector2.zero;
 
+    public SimpleFloatData StaminaData;
+    public SimpleImageBehaviour staminaBar;
+
     private void Start(){
         controller = GetComponent<CharacterController>();
         thisTransform = transform;
@@ -29,8 +32,11 @@ public class SimpleCharacterController : MonoBehaviour
         
         controller.Move(movementVector);
 
-        if(Input.GetButtonDown("Jump") && controller.isGrounded){
+        if(Input.GetButtonDown("Jump")){
             movementVector.y = Mathf.Sqrt(jumpForce * -2f * gravity);
+            //Debug.Log("jumpedddd");
+            StaminaData.UpdateValue(-0.3f);
+            staminaBar.UpdateWithFloatData();
         }
     }
 
