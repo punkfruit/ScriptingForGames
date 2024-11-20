@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 291447931}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1039,6 +1039,10 @@ PrefabInstance:
     - target: {fileID: 262730565830692699, guid: eb2ce66d4526845599df5ec5454e5181, type: 3}
       propertyPath: m_Name
       value: Spike (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139898569784960537, guid: eb2ce66d4526845599df5ec5454e5181, type: 3}
+      propertyPath: ShapeModule.type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3515641763208695513, guid: eb2ce66d4526845599df5ec5454e5181, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3321,6 +3325,10 @@ PrefabInstance:
     - target: {fileID: 262730565830692699, guid: eb2ce66d4526845599df5ec5454e5181, type: 3}
       propertyPath: m_Name
       value: Spike (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139898569784960537, guid: eb2ce66d4526845599df5ec5454e5181, type: 3}
+      propertyPath: ShapeModule.type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3515641763208695513, guid: eb2ce66d4526845599df5ec5454e5181, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target

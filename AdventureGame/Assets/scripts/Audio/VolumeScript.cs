@@ -7,6 +7,7 @@ public class VolumeScript : MonoBehaviour
 {
     public AudioSource musicSource;
     public Slider volumeSlider;
+    
 
     // Start is called before the first frame update
     void Start()
